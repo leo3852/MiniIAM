@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET SDK 9 Preview
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '9.0.100-preview.*'
+        dotnet-version: 8.0.x
 
     - name: Cache NuGet packages
       uses: actions/cache@v3

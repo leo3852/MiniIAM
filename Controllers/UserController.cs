@@ -54,21 +54,14 @@ namespace MiniIAM.Controllers
             }
         }
 
-        // [GET] /users/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUser(Guid id)
         {
-            var user = await _userService.GetUserByIdAsync(id);
+            var user = await _userService.GetUserWithRolesAsync(id);
             if (user == null)
                 return NotFound("User not found.");
 
-            return Ok(new
-            {
-                user.Id,
-                user.Name,
-                user.Email,
-                Roles = user.Roles.Select(r => r.RoleName)
-            });
+            return Ok(user);
         }
     }
 }
