@@ -1,0 +1,6 @@
+@MiniIAM_HostAddress = http://localhost:5109
+
+GET {{MiniIAM_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
