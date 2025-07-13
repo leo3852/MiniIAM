@@ -5,6 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
+    <VSTestEnable>false</VSTestEnable>
+
   </PropertyGroup>
 
   <ItemGroup>
