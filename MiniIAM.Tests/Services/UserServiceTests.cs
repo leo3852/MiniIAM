@@ -6,7 +6,7 @@ using MiniIAM.Repositories;
 using MiniIAM.Models;
 using MiniIAM.DTOs;
 
-namespace MiniIAM.Tests
+namespace MiniIAM.Tests.Services
 {
     public class UserServiceTests
     {
