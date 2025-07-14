@@ -79,7 +79,7 @@ namespace MiniIAM.Services
         {
             return System.Net.Mail.MailAddress.TryCreate(email, out _);
         }
-        
+
         public async Task<UserDto?> GetUserWithRolesAsync(Guid userId)
         {
             var user = await _userRepository.GetByIdAsync(userId);

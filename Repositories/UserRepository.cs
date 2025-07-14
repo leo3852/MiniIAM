@@ -6,7 +6,7 @@ using MiniIAM.Models;
 
 namespace MiniIAM.Repositories
 {
-    public class UserRepository : IUserRepository
+   public class UserRepository : IUserRepository
     {
         private readonly ApplicationDbContext _context;
 

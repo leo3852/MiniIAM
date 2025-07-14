@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MiniIAM.Data;
 using MiniIAM.Repositories;
+using MiniIAM.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,8 @@ builder.Services.AddControllers();
 //services dependencies injection
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+builder.Services.AddScoped<IUserService, UserService>(); 
+builder.Services.AddScoped<IRoleService, RoleService>();
 
 var app = builder.Build();
 
